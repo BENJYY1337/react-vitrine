@@ -1,4 +1,3 @@
-// SAME FORM BUT STATELESS
 import React from "react"
 import { useState } from "react"
 
@@ -34,7 +33,7 @@ const ContactForm = () => {
     }
 
     if (name && isEmail() && message) {
-      const templateId = ''
+      const templateId = 'template_5noz07n'
 
       nameS.classList.remove("red")
       emailS.classList.remove("red")

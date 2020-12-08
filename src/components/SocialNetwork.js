@@ -24,10 +24,10 @@ const SocialNetwork = () => {
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
           <li><i className="fab fa-facebook-f"></i></li>
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
+        <a href="https://twitter.com/BENJYY1337" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
           <li><i className="fab fa-twitter"></i></li>
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
+        <a href="https://www.instagram.com/pernot_benjamin/?hl=fr" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
           <li><i className="fab fa-instagram"></i></li>
         </a>
       </ul>

@@ -16,11 +16,13 @@
 
   <div id="root"></div>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-  <script type="text/javascript">
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
   </script>
-  <script src="script.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_s8fGIDcitLwLuqjwYjsgH");
+    })();
+  </script>
 </body>
 
 </html>

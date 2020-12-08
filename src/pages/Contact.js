@@ -5,11 +5,37 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import SocialNetwork from '../components/SocialNetwork'
 import ButtonsBottom from '../components/ButtonsBottom'
 import ContactForm from '../components/ContactForm'
+import { motion } from 'framer-motion'
+import Mouse from "../components/Mouse";
 
 const Contact = () => {
+  const variants = {
+    in: {
+      opacity: 1,
+      x: 0
+    },
+    out: {
+      opacity: 0,
+      x: 300,
+    }
+  }
+
+  const transition = {
+    ease: [.03, .87, .73, .9],
+    duration: .6,
+  }
+
   return (
     <main>
-      <div className="contact">
+      <Mouse />
+      <motion.div
+        className="contact"
+        exit="out"
+        animate="in"
+        initial="out"
+        variants={variants}
+        transition={transition}>
+
         <Navigation />
         <Logo />
         <ContactForm />
@@ -48,7 +74,7 @@ const Contact = () => {
           </div>
         </div>
         <ButtonsBottom left={'/project-4'} />
-      </div>
+      </motion.div>
     </main>
   )
 }
