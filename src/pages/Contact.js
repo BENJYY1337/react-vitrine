@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import SocialNetwork from '../components/SocialNetwork'
 import ButtonsBottom from '../components/ButtonsBottom'
+import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
       <div className="contact">
         <Navigation />
         <Logo />
-        {/* contact form */}
+        <ContactForm />
         <div className="contact-infos">
           <div className="address">
             <div className="content">
